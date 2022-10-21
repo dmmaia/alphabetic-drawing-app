@@ -1,4 +1,4 @@
-import 'package:alphabetic_drawing/pages/menu.dart';
+import 'package:alphabetic_drawing/pages/menu_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {

@@ -1,3 +1,4 @@
+import 'package:alphabetic_drawing/pages/drawing_screen.dart';
 import 'package:flutter/material.dart';
 
 class Menu extends StatelessWidget {
@@ -6,16 +7,15 @@ class Menu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: const BoxDecoration(
-        image: DecorationImage(
-          fit: BoxFit.fitWidth,
-          image: NetworkImage(
-              "https://img.freepik.com/free-vector/english-alphabets_1308-2901.jpg?w=2000"),
-        ),
-      ),
+      decoration: const BoxDecoration(color: Colors.blueAccent),
       child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
         ElevatedButton(
-          onPressed: () {},
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const DrawingScreen()),
+            );
+          },
           child: const Text('Começar'),
         )
       ]),
