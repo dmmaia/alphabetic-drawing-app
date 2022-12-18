@@ -1,8 +1,8 @@
-import 'package:alphabetic_drawing/pages/drawing_screen.dart';
+import 'package:alphabetic_drawing/pages/drawing/drawing_screen.dart';
 import 'package:flutter/material.dart';
 
 class Menu extends StatelessWidget {
-  const Menu({super.key});
+  const Menu({Key? key});
 
   @override
   Widget build(BuildContext context) {
